@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	text-align: center;
+	font-family: "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+/*ie5対策でｾﾝﾀﾘﾝｸﾞ*/
+}
+
+
+#wrapper {
+	width: 760px;
+	margin-right: auto;
+	margin-left: auto;
+	/*<!-ｾﾝﾀﾘﾝｸﾞ-*/ 
+	text-align:left;
+	/*bodyﾀｸﾞでｾﾝﾀﾘﾝｸﾞした行揃えを左ぞえに戻す-*/
+}
+#header {
+	height: 50px;
+
+}
+#header-navi {
+}
+#header-navi2 {
+	clear: left;
+}
+#container {
+	position: relative;
+	clear: left;/*絶対配置の基点*/
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*****main.cssと違うところ（naviとmainを分けている）*/
+#navi {
+	position: absolute;
+	width: 150px;
+	left: 0px;
+	top: 10px;	/*--基点からtop10　left0の位置-- */
+	font-size: 75%;
+	margin-right: 50px;
+	}
+#main {
+	position: absolute;
+	width: 550px;
+	left: 208px;
+	top: 5px;
+/*-基点からtop10　left210の位置- */	
+	text-align: left;
+}
+/*header-navi*/
+#header-navi ul {
+list-style-type: none;
+/*リストのマーカーを消す*/
+margin: 0px;
+padding-top: 0;
+padding-right: 0;
+padding-bottom: 0;
+padding-left: 0;
+}
+#header-navi li {
+	padding:0px;
+	margin: 0px;
+	background-image: url(../image/header-bt1.jpg);
+	background-repeat: no-repeat;
+	/* ﾀﾌﾞ背景画像を挿入 */
+float: left;/*水平方向にリストを並べる*/
+	height: 30px;
+	width: 100px;	/*背景画像に高さ、幅をそろえる*/
+}
+
+#header-navi a {
+display: block;
+width: 100%;
+/*リンク幅を広げる*/
+text-align: center;
+line-height: 30px;
+/*ライン高を設定　テキストを下に下げる*/
+text-decoration: none;
+font-size: 14px;
+}
+
+#header-navi a:link {
+color: #FFFFFF;
+}
+#header-navi a:visited {
+color: #FFFFFF;
+}
+#header-navi a:active {
+color: #FFFFFF;
+}
+/*　文字色　黒*/
+#header-navi a:hover {
+	background-image: url(../image/header-bt2.jpg);
+	background-repeat: no-repeat;/*オンマウス時の背景画像を挿入　文字色　赤*/
+	color: #FFFFFF;
+}
+#header-navi li.current {
+background-image: url(../image/header-bt2.jpg);
+background-repeat: no-repeat;/* 選択ﾀﾌの背景画像を挿入 */
+}
+
+#header-navi li.current a:link{
+	color: #FFFFFF;
+}
+#header-navi li.current a:visited{
+	color: #FFFFFF;
+}
+#header-navi li.current a:hover{
+	color: #FFFFFF;
+}
+#header-navi li.current a:active{
+	color: #FFFFFF;
+}
+/* 選択ﾀﾌ　文字色　赤　 */
+/*header-navi2*/
+#header-navi2 ul {
+list-style-type: none;
+/*リストのマーカーを消す*/
+margin: 0px;
+padding-top: 0;
+padding-right: 0;
+padding-bottom: 0;
+padding-left: 0;
+}
+#header-navi2 li {
+	padding:0px;
+	margin: 0px;
+	background-image: url(../image/header-bt3.jpg);
+	background-repeat: no-repeat;
+	/* ﾀﾌﾞ背景画像を挿入 */
+float: left;/*水平方向にリストを並べる*/
+	height: 30px;
+	width: 100px;
+	/*背景画像に高さ、幅をそろえる*/
+}
+
+#header-navi2 a {
+display: block;
+width: 100%;
+/*リンク幅を広げる*/
+text-align: center;
+line-height: 30px;
+/*ライン高を設定　テキストを下に下げる*/
+text-decoration: none;
+font-size: 14px;
+}
+
+#header-navi2 a:link {
+color: #FFFFFF;
+}
+#header-navi2 a:visited {
+color: #FFFFFF;
+}
+#header-navi2 a:active {
+color: #FFFFFF;
+}
+/*　文字色　黒*/
+#header-navi2 a:hover {
+	background-image: url(../image/header-bt4.jpg);
+	background-repeat: no-repeat;/*オンマウス時の背景画像を挿入　文字色　赤*/
+	color: #FFFFFF;
+}
+#header-navi2 li.current {
+background-image: url(../image/header-bt4.jpg);
+background-repeat: no-repeat;/* 選択ﾀﾌの背景画像を挿入 */
+}
+
+#header-navi2 li.current a:link{
+	color: #FFFFFF;
+}
+#header-navi2 li.current a:visited{
+	color: #FFFFFF;
+}
+#header-navi2 li.current a:hover{
+	color: #FFFFFF;
+}
+#header-navi2 li.current a:active{
+	color: #FFFFFF;
+}
+/* 選択ﾀﾌ　文字色　赤　 */
+/****main.cssと違うところ　　naviのスタイル*/
+#navi ul {
+list-style-type: none;
+/*リストのマーカーを消す*/
+border-top-color: #999999;
+border-top-width: 1px;
+border-top-style: solid;
+/*上にボーダーを引く*/
+margin: 0px;
+padding: 0;
+}
+#navi li {
+padding:0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: #999999;
+/*下にボーダーを引く*/
+background-color: #0000FF;
+background-position: left center;/*背景色を青に*/
+}
+#navi a {
+background-color: #FFFFFF;
+background-image: url(../image/yajirusi.gif);
+/*背景色を白に*/
+padding-left: 20px;
+/*左にパディングを指定して、画像の分を空ける*/
+text-decoration: none;
+/*リンクの下線を表示させない*/
+display: block;
+width: 150px;
+}
+/*リンク幅を広げるためblock要素にして、幅を指定*/
+
+#navi a:hover {
+color: #FFFFFF;
+/*オンマウス時　文字色　白*/
+background-color: transparent;
+/*オンマウス時　背景　透明*/
+background-image: none;
+/*オンマウス時　背景画像　非表示*/
+}
+
+#main p {
+	margin-right: 50px;
+	line-height: 1.7;
+}
+/*javascriptによるcurrentナビの設定*/
+li.thisChild{
+	font-weight: bolder;
+	background-color: #FFFFFF;
+	font-style: italic;
+}
