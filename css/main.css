@@ -226,3 +226,15 @@ h1 {
 
 
 html {overflow-y:scroll;}
+
+
+
+/* メニューリンクの相対指定 */
+.menu-link {
+    /* 親要素（body等）の文字サイズを1とした時の比率で指定 */
+    /* 0.7em〜0.8em程度にすると、周囲より一回り小さく、かつブラウザの強制拡大の影響を受けにくくなります */
+    font-size: 0.75em; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px; /* リンク間の余白を調整 */
+}
