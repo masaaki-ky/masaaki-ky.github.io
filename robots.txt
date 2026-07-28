@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://masaaki-ky.github.io/sitemap.xml
